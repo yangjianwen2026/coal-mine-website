@@ -1,0 +1,23 @@
+{
+  "envId": "YOUR_ENV_ID",
+  "framework": {
+    "plugins": {
+      "app": {
+        "use": "@cloudbase/framework-plugin-container",
+        "inputs": {
+          "serviceName": "coal-mine-app",
+          "dockerfilePath": "Dockerfile",
+          "cpu": 0.25,
+          "mem": 256,
+          "minNum": 0,
+          "maxNum": 1,
+          "containerPort": 3000,
+          "envParams": {
+            "NODE_ENV": "production"
+          },
+          "servicePort": 80
+        }
+      }
+    }
+  }
+}
