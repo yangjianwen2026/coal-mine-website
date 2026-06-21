@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>煤矿资讯招聘网 - 最新煤矿新闻和招聘信息</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <h1>⛏️ 煤矿资讯招聘网</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">首页</a></li>
+        <li><a href="news.html">资讯</a></li>
+        <li><a href="jobs.html">招聘</a></li>
+        <li><a href="#contact">联系我们</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 首页横幅 -->
+  <header class="hero">
+    <div class="container">
+      <h2>关注煤矿行业动态，把握就业机会</h2>
+      <p>提供最新的煤矿资讯、政策法规、招聘信息</p>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="搜索资讯或职位...">
+        <button onclick="search()">搜索</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主要内容区 -->
+  <main class="container">
+    <!-- 最新资讯 -->
+    <section class="section">
+      <div class="section-header">
+        <h2>📰 最新资讯</h2>
+        <a href="news.html" class="more-link">查看更多 →</a>
+      </div>
+      <div class="cards" id="newsList">
+        <p class="loading">加载中...</p>
+      </div>
+    </section>
+
+    <!-- 热门招聘 -->
+    <section class="section">
+      <div class="section-header">
+        <h2>💼 热门招聘</h2>
+        <a href="jobs.html" class="more-link">查看更多 →</a>
+      </div>
+      <div class="cards" id="jobsList">
+        <p class="loading">加载中...</p>
+      </div>
+    </section>
+
+    <!-- 数据统计 -->
+    <section class="stats">
+      <div class="stat-item">
+        <h3 id="newsCount">0</h3>
+        <p>资讯文章</p>
+      </div>
+      <div class="stat-item">
+        <h3 id="jobsCount">0</h3>
+        <p>招聘职位</p>
+      </div>
+      <div class="stat-item">
+        <h3 id="companiesCount">0</h3>
+        <p>合作企业</p>
+      </div>
+      <div class="stat-item">
+        <h3 id="viewsCount">0</h3>
+        <p>总浏览量</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>关于我们</h3>
+          <p>煤矿资讯招聘网致力于为煤矿行业从业者提供最新的行业资讯和招聘信息。</p>
+        </div>
+        <div class="footer-section">
+          <h3>联系方式</h3>
+          <p>📧 邮箱：contact@coalmine.com</p>
+          <p>📞 电话：400-123-4567</p>
+        </div>
+        <div class="footer-section">
+          <h3>快速链接</h3>
+          <ul>
+            <li><a href="news.html">行业资讯</a></li>
+            <li><a href="jobs.html">招聘信息</a></li>
+            <li><a href="#">政策法规</a></li>
+            <li><a href="#">安全培训</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 煤矿资讯招聘网. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
